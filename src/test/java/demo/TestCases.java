@@ -27,8 +27,8 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
        {
          System.out.println("Test case 1 started"); //start test case 
          Wrappers.goToUrl(driver); // Go to URL
-         String currentUrl = driver.getCurrentUrl();
-         String expectedUrl = "https://www.youtube.com/";
+         String currentUrl = driver.getCurrentUrl();  //actual url
+         String expectedUrl = "https://www.youtube.com/"; // expected url
          SoftAssert sa = new SoftAssert();
          sa.assertEquals(currentUrl , expectedUrl , "You are on incorrect url");
          sa.assertAll();
