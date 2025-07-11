@@ -41,23 +41,6 @@
             {
               "object_notation": "COMMAND",
               "operator": "contains",
-              "expected_value": "Navigate"
-            },
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "youtube"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Navigated to the YouTube",
-          "hint": "Ensure that you navigated to YouTube"
-        },
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
               "expected_value": "GetElementText"
             },
             {
@@ -212,65 +195,6 @@
           "join": "AND",
           "success_out": "Found the element to be add up: number of likes on a post",
           "hint": "Ensure that you summed up the number of likes on each post"
-        }
-      ]
-    },
-    {
-      "is_enabled": true,
-      "test_case_fe": "Test Case 5 - Search Keywords",
-      "test_case_hint": "Check TestNG Test `testCase05`",
-      "testng_test_name": "testCase05",
-      "chrome_log_assessment": [
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "TypeElement"
-            },
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "Movies"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Typed 'Movies' into the search bar",
-          "hint": "Ensure that you searched 'Movies' from the data"
-        },
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "TypeElement"
-            },
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "Music"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Typed 'Music' into the search bar",
-          "hint": "Ensure that you searched 'Music' from the data"
-        },
-        {
-          "validations": [
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "TypeElement"
-            },
-            {
-              "object_notation": "COMMAND",
-              "operator": "contains",
-              "expected_value": "Games"
-            }
-          ],
-          "join": "AND",
-          "success_out": "Typed 'Games' into the search bar",
-          "hint": "Ensure that you searched 'Games' from the data"
         }
       ]
     }

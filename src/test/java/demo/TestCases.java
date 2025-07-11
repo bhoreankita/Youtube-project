@@ -25,9 +25,14 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
        @Test
        public void testCase01() throws InterruptedException
        {
-         System.out.println("Test case 1 started"); //start test case
+         System.out.println("Test case 1 started"); //start test case 
          Wrappers.goToUrl(driver); // Go to URL
-         Thread.sleep(4000);
+         String currentUrl = driver.getCurrentUrl();
+         String expectedUrl = "https://www.youtube.com/";
+         SoftAssert sa = new SoftAssert();
+         sa.assertEquals(currentUrl , expectedUrl , "You are on incorrect url");
+         sa.assertAll();
+         Thread.sleep(3000);
          Wrappers.findElementAndClick(driver, By.xpath("//a[text()='About']")); //find About element and click on it
          WebElement aboutText = driver.findElement(By.xpath("//section[contains(@class,'ytabout__content')]")); //get about section text
          System.out.println(aboutText.getText()); //print it
