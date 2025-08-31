@@ -26,4 +26,5 @@ How to run project Java 11 Maven installed Chrome installed IDE(Visual studio)
 
 Run tests Run all test cases by using ./gradlew test command
 
-Author Ankita Bhore Email:- bhoreankita@gmail.com Github link:- https://github.com/bhoreankita/Youtube_project.git
+Author Ankita Bhore Email:- bhoreankita@gmail.com 
+Github link:- https://github.com/bhoreankita/Youtube_project.git
